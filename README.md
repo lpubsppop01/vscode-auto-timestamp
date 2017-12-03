@@ -1,4 +1,5 @@
 # vscode-auto-timestamp
+[![Build status](https://ci.appveyor.com/api/projects/status/8jhbugo5d2ejuylh?svg=true)](https://ci.appveyor.com/project/lpubsppop01/vscode-auto-timestamp)
 
 A Visual Studio Code extension that update timestamp field when saving document.
 
