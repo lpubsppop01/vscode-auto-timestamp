@@ -44,8 +44,7 @@ class ExtensionCore {
             const modifiedTimeRange = this.getTextRangeBetween(line,
                  this.m_config.modifiedTimeStart, this.m_config.modifiedTimeEnd);
             if (modifiedTimeRange != null) {
-                const stats = fs.statSync(e.document.fileName);
-                const timeStr = moment(stats.mtime).format(this.m_config.momentFormat);
+                const timeStr = moment().format(this.m_config.momentFormat);
                 edits.push(vscode.TextEdit.replace(modifiedTimeRange, timeStr));
             }
         }
