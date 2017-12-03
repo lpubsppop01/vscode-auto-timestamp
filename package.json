@@ -1,0 +1,71 @@
+{
+    "name": "vscode-auto-timestamp",
+    "displayName": "vscode-auto-timestamp",
+    "description": "Auto update timestamp field on save",
+    "version": "0.0.1",
+    "publisher": "lpubsppop01",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "configuration": [
+            {
+                "title": "auto-timestamp configuration",
+                "type": "object",
+                "properties": {
+                    "lpubsppop01.autoTimestamp": {
+                        "properties": {
+                            "lineLimit": {
+                                "type": "integer",
+                                "default": 5
+                            },
+                            "birthTimeStart": {
+                                "type": "string",
+                                "default": "Created: "
+                            },
+                            "birthTimeEnd": {
+                                "type": "string",
+                                "default": "$"
+                            },
+                            "modifiedTimeStart": {
+                                "type": "string",
+                                "default": "Last modified: "
+                            },
+                            "modifiedTimeEnd": {
+                                "type": "string",
+                                "default": "$"
+                            },
+                            "momentFormat": {
+                                "type": "string",
+                                "default": "YYYY/MM/DD HH:mm:ss"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "moment": "^2.19.3"
+    }
+}
