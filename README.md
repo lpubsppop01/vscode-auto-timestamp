@@ -21,7 +21,16 @@ This extension contributes the following settings:
 
 ## Installation
 
-TODO
+Clone this repo to local extensions folder, and build it.
+
+Example on Windows:
+```
+PS> cd $env:USERPROFILE\.vscode\extensions
+PS> git clone https://github.com/lpubsppop01/vscode-auto-timestamp.git
+PS> cd vscode-auto-timestamp
+PS> npm install
+PS> npm run compile
+```
 
 ## Author
 [lpubsppop01](https://github.com/lpubsppop01)
