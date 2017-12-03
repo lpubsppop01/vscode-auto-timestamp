@@ -19,18 +19,8 @@ This extension contributes the following settings:
 - `lpubsppop01.autoTimestamp.modifiedTimeEnd`
 - `lpubsppop01.autoTimestamp.momentFormat`
 
-## Installation
-
-Clone this repo to local extensions folder, and build it.
-
-Example on Windows:
-```
-PS> cd $env:USERPROFILE\.vscode\extensions
-PS> git clone https://github.com/lpubsppop01/vscode-auto-timestamp.git
-PS> cd vscode-auto-timestamp
-PS> npm install
-PS> npm run compile
-```
+## Download
+[vscode-auto-timestamp-0.0.1.vsix](https://www.dropbox.com/s/y71dxzax7thk04x/vscode-auto-timestamp-0.0.1.vsix?dl=0)
 
 ## Author
 [lpubsppop01](https://github.com/lpubsppop01)
