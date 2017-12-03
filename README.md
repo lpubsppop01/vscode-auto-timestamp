@@ -20,7 +20,7 @@ This extension contributes the following settings:
 - `lpubsppop01.autoTimestamp.momentFormat`
 
 ## Download
-[vscode-auto-timestamp-0.0.1.vsix](https://www.dropbox.com/s/y71dxzax7thk04x/vscode-auto-timestamp-0.0.1.vsix?dl=0)
+[vscode-auto-timestamp Latest Build - AppVeyor](https://ci.appveyor.com/api/projects/lpubsppop01/vscode-auto-timestamp/artifacts/vscode-auto-timestamp-0.0.1.vsix)
 
 ## Author
 [lpubsppop01](https://github.com/lpubsppop01)
