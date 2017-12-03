@@ -1,0 +1,18 @@
+environment:
+  nodejs_version: "" # Empty means latest version
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm -g install vsce
+  - npm install
+
+  # cf: https://help.appveyor.com/discussions/questions/1954-getting-version-from-packagejson
+  - ps: $env:package_version = (Get-Content -Raw -Path package.json | ConvertFrom-Json).version
+  - ps: Update-AppveyorBuild -Version "$env:package_version-$env:APPVEYOR_BUILD_NUMBER"
+
+build:
+  - npm run compile
+  - vsce package
+
+artifacts:
+  - path: vscode-auto-timestamp-$(package_version).vsix
