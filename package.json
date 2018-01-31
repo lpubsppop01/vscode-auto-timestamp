@@ -1,6 +1,6 @@
 {
     "name": "vscode-auto-timestamp",
-    "displayName": "vscode-auto-timestamp",
+    "displayName": "Auto Timestamp",
     "description": "Auto update timestamp field on save",
     "version": "0.0.1",
     "publisher": "lpubsppop01",
@@ -17,7 +17,7 @@
     "contributes": {
         "configuration": [
             {
-                "title": "auto-timestamp configuration",
+                "title": "Auto Timestamp configuration",
                 "type": "object",
                 "properties": {
                     "lpubsppop01.autoTimestamp.lineLimit": {
