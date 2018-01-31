@@ -20,6 +20,10 @@
                 "title": "Auto Timestamp configuration",
                 "type": "object",
                 "properties": {
+                    "lpubsppop01.autoTimestamp.filenamePattern": {
+                        "type": "string",
+                        "default": ".*"
+                    },
                     "lpubsppop01.autoTimestamp.lineLimit": {
                         "type": "integer",
                         "default": 5

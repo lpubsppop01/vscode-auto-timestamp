@@ -28,6 +28,7 @@ class ExtensionCore {
     }
 
     public onWillSaveTextDocument(e: vscode.TextDocumentWillSaveEvent) {
+        if (!e.document.fileName.match(this.m_config.fileNamePattern)) return;
         var edits: vscode.TextEdit[] = [];
         const lineIndices = this.getIndexRangeUntil(this.m_config.lineLimit, e.document.lineCount);
         for (const iLine of lineIndices) {
@@ -93,6 +94,7 @@ class ExtensionConfiguration {
 
     public onDidChangeConfiguration() {
         this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimestamp");
+        this.m_fileNamePattern = null;
         this.m_birthTimeStart = null;
         this.m_birthTimeEnd = null;
     }
@@ -101,6 +103,14 @@ class ExtensionConfiguration {
         if (this.m_config == null) return defaultValue;
         const value = this.m_config.get<T>(propertyName);
         return value != null ? value : defaultValue;
+    }
+
+    private m_fileNamePattern: RegExp;
+    public get fileNamePattern(): RegExp {
+        if (this.m_fileNamePattern == null) {
+            this.m_fileNamePattern = new RegExp(this.getValue<string>("filenamePattern", ".*"));
+        }
+        return this.m_fileNamePattern;
     }
 
     public get lineLimit(): number {
