@@ -20,33 +20,29 @@
                 "title": "auto-timestamp configuration",
                 "type": "object",
                 "properties": {
-                    "lpubsppop01.autoTimestamp": {
-                        "properties": {
-                            "lineLimit": {
-                                "type": "integer",
-                                "default": 5
-                            },
-                            "birthTimeStart": {
-                                "type": "string",
-                                "default": "Created: "
-                            },
-                            "birthTimeEnd": {
-                                "type": "string",
-                                "default": "$"
-                            },
-                            "modifiedTimeStart": {
-                                "type": "string",
-                                "default": "Last modified: "
-                            },
-                            "modifiedTimeEnd": {
-                                "type": "string",
-                                "default": "$"
-                            },
-                            "momentFormat": {
-                                "type": "string",
-                                "default": "YYYY/MM/DD HH:mm:ss"
-                            }
-                        }
+                    "lpubsppop01.autoTimestamp.lineLimit": {
+                        "type": "integer",
+                        "default": 5
+                    },
+                    "lpubsppop01.autoTimestamp.birthTimeStart": {
+                        "type": "string",
+                        "default": "Created: "
+                    },
+                    "lpubsppop01.autoTimestamp.birthTimeEnd": {
+                        "type": "string",
+                        "default": "$"
+                    },
+                    "lpubsppop01.autoTimestamp.modifiedTimeStart": {
+                        "type": "string",
+                        "default": "Last modified: "
+                    },
+                    "lpubsppop01.autoTimestamp.modifiedTimeEnd": {
+                        "type": "string",
+                        "default": "$"
+                    },
+                    "lpubsppop01.autoTimestamp.momentFormat": {
+                        "type": "string",
+                        "default": "YYYY/MM/DD HH:mm:ss"
                     }
                 }
             }
