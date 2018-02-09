@@ -120,7 +120,7 @@ class ExtensionConfiguration {
     private m_birthTimeStart: RegExp;
     public get birthTimeStart(): RegExp {
         if (this.m_birthTimeStart == null) {
-            this.m_birthTimeStart = new RegExp(this.getValue<string>("birthTimeStart", "Created: "));
+            this.m_birthTimeStart = new RegExp(this.getValue<string>("birthTimeStart", "[cC]reated *: "));
         }
         return this.m_birthTimeStart;
     }
@@ -136,7 +136,7 @@ class ExtensionConfiguration {
     private m_modifiedTimeStart: RegExp;
     public get modifiedTimeStart(): RegExp {
         if (this.m_modifiedTimeStart == null) {
-            this.m_modifiedTimeStart = new RegExp(this.getValue<string>("modifiedTimeStart", "Last modified: "));
+            this.m_modifiedTimeStart = new RegExp(this.getValue<string>("modifiedTimeStart", "[lL]ast[ -][mM]odified *: "));
         }
         return this.m_modifiedTimeStart;
     }

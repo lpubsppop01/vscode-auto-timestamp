@@ -37,7 +37,7 @@
                     "lpubsppop01.autoTimestamp.birthTimeStart": {
                         "description": "%birthTimeStart.description%",
                         "type": "string",
-                        "default": "Created: "
+                        "default": "[cC]reated *: "
                     },
                     "lpubsppop01.autoTimestamp.birthTimeEnd": {
                         "description": "%birthTimeEnd.description%",
@@ -47,7 +47,7 @@
                     "lpubsppop01.autoTimestamp.modifiedTimeStart": {
                         "description": "%modifiedTimeStart.description%",
                         "type": "string",
-                        "default": "Last modified: "
+                        "default": "[lL]ast[ -][mM]odified *: "
                     },
                     "lpubsppop01.autoTimestamp.modifiedTimeEnd": {
                         "description": "%modifiedTimeEnd.description%",
