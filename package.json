@@ -21,34 +21,41 @@
     "contributes": {
         "configuration": [
             {
-                "title": "Auto Timestamp configuration",
+                "title": "Auto Timestamp",
                 "type": "object",
                 "properties": {
                     "lpubsppop01.autoTimestamp.filenamePattern": {
+                        "description": "%filenamePattern.description%",
                         "type": "string",
                         "default": ".*"
                     },
                     "lpubsppop01.autoTimestamp.lineLimit": {
+                        "description": "%lineLimit.description%",
                         "type": "integer",
                         "default": 5
                     },
                     "lpubsppop01.autoTimestamp.birthTimeStart": {
+                        "description": "%birthTimeStart.description%",
                         "type": "string",
                         "default": "Created: "
                     },
                     "lpubsppop01.autoTimestamp.birthTimeEnd": {
+                        "description": "%birthTimeEnd.description%",
                         "type": "string",
                         "default": "$"
                     },
                     "lpubsppop01.autoTimestamp.modifiedTimeStart": {
+                        "description": "%modifiedTimeStart.description%",
                         "type": "string",
                         "default": "Last modified: "
                     },
                     "lpubsppop01.autoTimestamp.modifiedTimeEnd": {
+                        "description": "%modifiedTimeEnd.description%",
                         "type": "string",
                         "default": "$"
                     },
                     "lpubsppop01.autoTimestamp.momentFormat": {
+                        "description": "%momentFormat.description%",
                         "type": "string",
                         "default": "YYYY/MM/DD HH:mm:ss"
                     }

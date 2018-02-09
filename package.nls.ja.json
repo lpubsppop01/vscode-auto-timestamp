@@ -1,0 +1,9 @@
+{
+    "filenamePattern.description": "この正規表現に名称がマッチするファイルを対象とします。",
+    "lineLimit.description": "ファイルの先頭（プラスの場合）または末尾（マイナスの場合）からここで指定した数の行を対象とします。",
+    "birthTimeStart.description": "この正規表現にマッチする箇所から後を作成日時フィールドと見なします。",
+    "birthTimeEnd.description": "この正規表現にマッチする箇所から前を作成日時フィールドと見なします。",
+    "modifiedTimeStart.description": "この正規表現にマッチする箇所から後を更新日時フィールドと見なします。",
+    "modifiedTimeEnd.description": "この正規表現にマッチする箇所から前を更新日時フィールドと見なします。",
+    "momentFormat.description": "作成および更新日時に用いる Moment.js フォーマット文字列です。"
+}
