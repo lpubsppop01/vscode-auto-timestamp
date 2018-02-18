@@ -3,7 +3,6 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm -g install vsce
   - npm install
 
   # cf: https://help.appveyor.com/discussions/questions/1954-getting-version-from-packagejson
@@ -12,7 +11,7 @@ install:
 
 build_script:
   - npm run compile
-  - vsce package
+  - npm run vsce-package
 
 artifacts:
   - path: vscode-auto-timestamp-$(package_version).vsix
