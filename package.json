@@ -1,7 +1,7 @@
 {
     "name": "vscode-auto-timestamp",
     "displayName": "Auto Timestamp",
-    "description": "Auto update timestamp field on save",
+    "description": "Update timestamp in file content on save",
     "version": "0.0.1",
     "publisher": "lpubsppop01",
     "engines": {

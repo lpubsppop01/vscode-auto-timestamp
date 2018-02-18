@@ -1,9 +1,9 @@
 {
-    "filenamePattern.description": "Target files whose names matches this regular expression.",
-    "lineLimit.description": "Target this number of lines from head (if plus) or tail (if minus) of file.",
-    "birthTimeStart.description": "Treat following of part that matches this regular expression as birth time field.",
-    "birthTimeEnd.description": "Treat preceding of part that matches this regular expression as birth time field.",
-    "modifiedTimeStart.description": "Treat following of part that matches this regular expression as modified time field.",
-    "modifiedTimeEnd.description": "Treat preceding of part that matches this regular expression as modified time field.",
+    "filenamePattern.description": "Configure regular expression that matched files will be processed.",
+    "lineLimit.description": "The number of lines from head (if plus) or tail (if minus) of file that will be processed.",
+    "birthTimeStart.description": "Configure regular expression that following of matched part will be treated as birth time field.",
+    "birthTimeEnd.description": "Configure regular expression that preceding of matched part will be treated as birth time field.",
+    "modifiedTimeStart.description": "Configure regular expression that following of matched part will be treated as modified time field.",
+    "modifiedTimeEnd.description": "Configure regular expression that preceding of matched part will be treated as modified time field.",
     "momentFormat.description": "Moment.js format string for birth time and modified time."
 }
