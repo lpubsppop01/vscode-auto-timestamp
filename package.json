@@ -76,7 +76,8 @@
         "@types/node": "^7.0.43",
         "typescript": "^2.6.1",
         "vsce": "^1.36.2",
-        "vscode": "^1.1.6"
+        "vscode": "^1.1.6",
+        "vso-node-api": "6.1.2-preview"
     },
     "dependencies": {
         "moment": "^2.19.3"
