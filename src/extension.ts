@@ -62,7 +62,7 @@ class ExtensionCore {
             }
         } else {
             let i = count - 1;
-            const iMin = Math.max(count - limit, 0);
+            const iMin = Math.max(count + limit, 0);
             while (i >= iMin) {
                 indices.push(i--);
             }
