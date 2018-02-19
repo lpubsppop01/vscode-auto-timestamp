@@ -1,12 +1,12 @@
-# Auto Timestamp
+# Auto Time Stamp
 [![Build status](https://ci.appveyor.com/api/projects/status/8jhbugo5d2ejuylh?svg=true)](https://ci.appveyor.com/project/lpubsppop01/vscode-auto-timestamp)
 
-A Visual Studio Code extension that update timestamp in file content when saving document.
+A Visual Studio Code extension that update time stamp in file content when saving document.
 
 ## Features
 When saving document:
   - Update last modified time field
-  - Fill birth time field by file timestamp if it is empty
+  - Fill birth time field by file time stamp if it is empty
 
 Each of the fields will be detected with condition of settings.
 By default settings, lines like the following will be detected:

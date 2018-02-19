@@ -1,6 +1,6 @@
 {
     "name": "vscode-auto-timestamp",
-    "displayName": "Auto Timestamp",
+    "displayName": "Auto Time Stamp",
     "description": "Update timestamp in file content on save",
     "version": "0.0.1",
     "publisher": "lpubsppop01",
@@ -21,40 +21,40 @@
     "contributes": {
         "configuration": [
             {
-                "title": "Auto Timestamp",
+                "title": "Auto Time Stamp",
                 "type": "object",
                 "properties": {
-                    "lpubsppop01.autoTimestamp.filenamePattern": {
+                    "lpubsppop01.autoTimeStamp.filenamePattern": {
                         "description": "%filenamePattern.description%",
                         "type": "string",
                         "default": ".*"
                     },
-                    "lpubsppop01.autoTimestamp.lineLimit": {
+                    "lpubsppop01.autoTimeStamp.lineLimit": {
                         "description": "%lineLimit.description%",
                         "type": "integer",
                         "default": 5
                     },
-                    "lpubsppop01.autoTimestamp.birthTimeStart": {
+                    "lpubsppop01.autoTimeStamp.birthTimeStart": {
                         "description": "%birthTimeStart.description%",
                         "type": "string",
                         "default": "[cC]reated *: "
                     },
-                    "lpubsppop01.autoTimestamp.birthTimeEnd": {
+                    "lpubsppop01.autoTimeStamp.birthTimeEnd": {
                         "description": "%birthTimeEnd.description%",
                         "type": "string",
                         "default": "$"
                     },
-                    "lpubsppop01.autoTimestamp.modifiedTimeStart": {
+                    "lpubsppop01.autoTimeStamp.modifiedTimeStart": {
                         "description": "%modifiedTimeStart.description%",
                         "type": "string",
                         "default": "[lL]ast[ -][mM]odified *: "
                     },
-                    "lpubsppop01.autoTimestamp.modifiedTimeEnd": {
+                    "lpubsppop01.autoTimeStamp.modifiedTimeEnd": {
                         "description": "%modifiedTimeEnd.description%",
                         "type": "string",
                         "default": "$"
                     },
-                    "lpubsppop01.autoTimestamp.momentFormat": {
+                    "lpubsppop01.autoTimeStamp.momentFormat": {
                         "description": "%momentFormat.description%",
                         "type": "string",
                         "default": "YYYY/MM/DD HH:mm:ss"

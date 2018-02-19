@@ -89,11 +89,11 @@ class ExtensionConfiguration {
     private m_config: vscode.WorkspaceConfiguration;
 
     public constructor() {
-        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimestamp");
+        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimeStamp");
     }
 
     public onDidChangeConfiguration() {
-        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimestamp");
+        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimeStamp");
         this.m_fileNamePattern = null;
         this.m_birthTimeStart = null;
         this.m_birthTimeEnd = null;
