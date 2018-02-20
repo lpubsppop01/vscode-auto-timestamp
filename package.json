@@ -4,12 +4,17 @@
     "description": "Update timestamp in file content on save",
     "version": "0.0.1",
     "publisher": "lpubsppop01",
+    "license": "Zlib",
     "engines": {
         "vscode": "^1.18.0"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/lpubsppop01/vscode-auto-timestamp.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lpubsppop01/vscode-auto-timestamp/issues",
+        "email": "lpubsppop01@gmail.com"
     },
     "categories": [
         "Other"
