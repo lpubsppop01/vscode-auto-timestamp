@@ -2,7 +2,7 @@
     "name": "vscode-auto-timestamp",
     "displayName": "Auto Time Stamp",
     "description": "Update timestamp in file content on save",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "lpubsppop01",
     "license": "Zlib",
     "engines": {

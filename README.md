@@ -20,7 +20,7 @@ If it does not work, please check the Line Limit setting. This setting is 5 line
 In addition to the above, there is also the setting of the target file name (Filename Pattern), but by default all files are matched.
 
 ## Download
-[vscode-auto-timestamp Latest Build - AppVeyor](https://ci.appveyor.com/api/projects/lpubsppop01/vscode-auto-timestamp/artifacts/vscode-auto-timestamp-0.0.1.vsix)
+[vscode-auto-timestamp Latest Build - AppVeyor](https://ci.appveyor.com/api/projects/lpubsppop01/vscode-auto-timestamp/artifacts/vscode-auto-timestamp-0.0.2.vsix)
 
 ## Author
 [lpubsppop01](https://github.com/lpubsppop01)
