@@ -97,6 +97,8 @@ class ExtensionConfiguration {
         this.m_fileNamePattern = null;
         this.m_birthTimeStart = null;
         this.m_birthTimeEnd = null;
+        this.m_modifiedTimeStart = null;
+        this.m_modifiedTimeEnd = null;
     }
 
     private getValue<T>(propertyName: string, defaultValue: T): T {
