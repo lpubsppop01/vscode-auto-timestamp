@@ -70,11 +70,11 @@ class ExtensionCore {
         return indices;
     }
 
-    private getTextRangeBetween(line: vscode.TextLine, startPattern: RegExp, endPattern): vscode.Range {
+    private getTextRangeBetween(line: vscode.TextLine, startPattern: RegExp, endPattern: RegExp): vscode.Range {
         const startResult = line.text.match(startPattern);
         if (startResult == null) return null;
         const iRangeStart = startResult.index + startResult[0].length;
-        const endResult = line.text.substr(iRangeStart).match(endPattern);
+        const endResult = line.text.substring(iRangeStart).match(endPattern);
         if (endResult == null) return null;
         const iRangeEnd = iRangeStart + endResult.index;
         const startPos = new vscode.Position(line.lineNumber, iRangeStart);
