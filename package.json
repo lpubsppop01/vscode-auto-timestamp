@@ -32,7 +32,7 @@
                     "lpubsppop01.autoTimeStamp.filenamePattern": {
                         "description": "%filenamePattern.description%",
                         "type": "string",
-                        "default": ".*"
+                        "default": "^(?!.*[/\\\\]\\.vscode[/\\\\]settings.json$)"
                     },
                     "lpubsppop01.autoTimeStamp.lineLimit": {
                         "description": "%lineLimit.description%",

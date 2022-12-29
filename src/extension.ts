@@ -111,7 +111,7 @@ class ExtensionConfiguration {
     private m_fileNamePattern: RegExp;
     public get fileNamePattern(): RegExp {
         if (this.m_fileNamePattern == null) {
-            this.m_fileNamePattern = new RegExp(this.getValue<string>("filenamePattern", ".*"));
+            this.m_fileNamePattern = new RegExp(this.getValue<string>("filenamePattern", "^(?!.*[/\\\\]\\.vscode[/\\\\]settings.json$)"));
         }
         return this.m_fileNamePattern;
     }
