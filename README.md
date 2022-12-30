@@ -18,8 +18,8 @@ By default settings, lines like the following will be detected:
 If this extension does not work, please check the followings:
 - The Line Limit setting is `5` lines from the beginning of the file by default, so it may be too small for your file.
 - There is also the setting of the target file name (Filename Pattern), and `.vscode/settings.json` is ignored by default.
-  - The default value changed in version 0.0.5. If you have been using 0.0.4 or earlier and have changed this setting, please review it.
-- This extension will not work if your VS Code Auto Save setting is `afterDelay`.
+  - The default value changed in version 0.0.5. If you have been using 0.0.4 or earlier and have changed this setting, please check it.
+- This extension does not work if your VS Code Auto Save setting is `afterDelay`.
 
 ## Download
 [vscode-auto-timestamp Latest Build - AppVeyor](https://ci.appveyor.com/api/projects/lpubsppop01/vscode-auto-timestamp/artifacts/vscode-auto-timestamp-0.0.4.vsix)
