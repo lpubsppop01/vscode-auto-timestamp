@@ -2,7 +2,7 @@
     "name": "vscode-auto-timestamp",
     "displayName": "Auto Time Stamp",
     "description": "Update timestamp in file content on save",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "lpubsppop01",
     "license": "Zlib",
     "engines": {
@@ -19,6 +19,7 @@
     "categories": [
         "Other"
     ],
+    "icon": "images/icon.png",
     "activationEvents": [
         "*"
     ],
@@ -32,7 +33,7 @@
                     "lpubsppop01.autoTimeStamp.filenamePattern": {
                         "description": "%filenamePattern.description%",
                         "type": "string",
-                        "default": ".*"
+                        "default": "^(?!.*[/\\\\]\\.vscode[/\\\\]settings.json$)"
                     },
                     "lpubsppop01.autoTimeStamp.lineLimit": {
                         "description": "%lineLimit.description%",
@@ -76,15 +77,15 @@
         "vsce-package": "vsce package"
     },
     "devDependencies": {
-        "@types/mocha": "^8.2.2",
-        "@types/node": "^15.0.1",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^18.11.18",
         "@types/vscode": "^1.18.0",
-        "typescript": "^4.2.4",
-        "vsce": "^1.88.0",
+        "typescript": "^4.9.4",
+        "vsce": "^2.7.0",
         "vscode-test": "^1.5.2",
-        "vso-node-api": "6.5.0"
+        "vso-node-api": "^6.0.0"
     },
     "dependencies": {
-        "moment": "^2.29.1"
+        "moment": "^2.29.4"
     }
 }

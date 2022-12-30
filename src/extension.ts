@@ -29,6 +29,7 @@ class ExtensionCore {
 
     public onWillSaveTextDocument(e: vscode.TextDocumentWillSaveEvent) {
         if (!e.document.fileName.match(this.m_config.fileNamePattern)) return;
+        if (e.reason == vscode.TextDocumentSaveReason.AfterDelay) return;
         var edits: vscode.TextEdit[] = [];
         const lineIndices = this.getIndexRangeUntil(this.m_config.lineLimit, e.document.lineCount);
         for (const iLine of lineIndices) {
@@ -70,11 +71,11 @@ class ExtensionCore {
         return indices;
     }
 
-    private getTextRangeBetween(line: vscode.TextLine, startPattern: RegExp, endPattern): vscode.Range {
+    private getTextRangeBetween(line: vscode.TextLine, startPattern: RegExp, endPattern: RegExp): vscode.Range {
         const startResult = line.text.match(startPattern);
         if (startResult == null) return null;
         const iRangeStart = startResult.index + startResult[0].length;
-        const endResult = line.text.substr(iRangeStart).match(endPattern);
+        const endResult = line.text.substring(iRangeStart).match(endPattern);
         if (endResult == null) return null;
         const iRangeEnd = iRangeStart + endResult.index;
         const startPos = new vscode.Position(line.lineNumber, iRangeStart);
@@ -110,7 +111,7 @@ class ExtensionConfiguration {
     private m_fileNamePattern: RegExp;
     public get fileNamePattern(): RegExp {
         if (this.m_fileNamePattern == null) {
-            this.m_fileNamePattern = new RegExp(this.getValue<string>("filenamePattern", ".*"));
+            this.m_fileNamePattern = new RegExp(this.getValue<string>("filenamePattern", "^(?!.*[/\\\\]\\.vscode[/\\\\]settings.json$)"));
         }
         return this.m_fileNamePattern;
     }

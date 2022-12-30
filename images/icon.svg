@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733265 67.733265"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="icon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.27767286"
+     inkscape:cx="450.9682"
+     inkscape:cy="-164.55471"
+     inkscape:window-width="1382"
+     inkscape:window-height="847"
+     inkscape:window-x="58"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:rotation="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid132" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28167"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28163"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28159"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28155"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28151"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28147"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28119"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28115">
+      <circle
+         style="display:none;fill:#c05aa0;fill-opacity:1;stroke-width:0.661458;stroke-linejoin:round"
+         id="circle28117"
+         cx="52.916615"
+         cy="52.916615"
+         r="15.874986"
+         d="M 68.7916,52.916615 A 15.874986,15.874986 0 0 1 52.916615,68.7916 15.874986,15.874986 0 0 1 37.041629,52.916615 15.874986,15.874986 0 0 1 52.916615,37.041629 15.874986,15.874986 0 0 1 68.7916,52.916615 Z" />
+      <path
+         id="lpe_path-effect28119"
+         style="fill:#c05aa0;fill-opacity:1;stroke-width:0.661458;stroke-linejoin:round"
+         class="powerclip"
+         d="M 0.95311737,0.95311737 H 67.838478 V 67.838478 H 0.95311737 Z M 68.7916,52.916615 A 15.874986,15.874986 0 0 0 52.916615,37.041629 15.874986,15.874986 0 0 0 37.041629,52.916615 15.874986,15.874986 0 0 0 52.916615,68.7916 15.874986,15.874986 0 0 0 68.7916,52.916615 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28123">
+      <path
+         id="lpe_path-effect28147"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="m 39.307928,44.599591 h 11.98437 v 14.630201 h -11.98437 z m 21.867169,11.283848 v -2.645831" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28127">
+      <path
+         id="lpe_path-effect28151"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="m -64.842445,-67.166615 h 25.534516 v 19.921194 h -25.534516 z m 3.667348,11.283176 v 2.645831" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28131">
+      <path
+         id="lpe_path-effect28155"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="m 36.662097,44.599631 h 17.276031 v 14.63016 H 36.662097 Z m 24.513,11.283808 v -2.645831" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28135">
+      <path
+         id="lpe_path-effect28159"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="M 41.632766,39.308596 H 67.167284 V 59.229791 H 41.632766 Z m 19.542331,16.574843 v -2.645831" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28139">
+      <path
+         id="lpe_path-effect28163"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="m 52.537081,47.245421 h 17.276031 v 14.63016 H 52.537081 Z m 8.638016,8.638018 v -2.645831" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28143">
+      <path
+         id="lpe_path-effect28167"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="M 35.008454,35.008454 H 71.466758 V 71.466758 H 35.008454 Z m 26.166643,20.874985 v -2.645831" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath28123-8">
+      <path
+         style="display:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 61.175097,55.883439 V 53.237608"
+         id="path28125-8" />
+      <path
+         id="lpe_path-effect28147-7"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="m 39.307928,44.599591 h 11.98437 v 14.630201 h -11.98437 z m 21.867169,11.283848 v -2.645831" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect28147-1"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="クリップをパスに変換した後に残らない場合には&lt;b&gt;フィル/ストローク&lt;/b&gt;ダイアログのフィルルールで evenodd を使用します。" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipath_lpe_path-effect28147-1">
+      <path
+         id="lpe_path-effect28147-1"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.98437;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="m 39.307928,44.599591 h 11.98437 v 14.630201 h -11.98437 z m 21.867169,11.283848 v -2.645831" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#00aad4;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path24127"
+       clip-path="url(#clipPath28115)"
+       inkscape:path-effect="#path-effect28119"
+       sodipodi:type="arc"
+       sodipodi:cx="34.395798"
+       sodipodi:cy="34.395798"
+       sodipodi:rx="26.458305"
+       sodipodi:ry="26.458305"
+       d="M 60.854103,34.395798 A 26.458305,26.458305 0 0 1 34.395798,60.854103 26.458305,26.458305 0 0 1 7.9374924,34.395798 26.458305,26.458305 0 0 1 34.395798,7.9374924 26.458305,26.458305 0 0 1 60.854103,34.395798 Z" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#00aad4;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 34.395799,15.874984 0,18.520815 14.552068,0"
+       id="path27917"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <path
+       id="path257"
+       clip-path="url(#clipPath28143)"
+       style="fill:#00aad4;fill-opacity:1;stroke-width:0.661457;stroke-linejoin:round"
+       d="M 53.237524 40.00837 A 13.229152 13.229152 0 0 0 40.00837 53.237524 A 13.229152 13.229152 0 0 0 53.237524 66.466677 A 13.229152 13.229152 0 0 0 66.466677 53.237524 A 13.229152 13.229152 0 0 0 53.237524 40.00837 z M 53.13107 44.308362 C 53.204828 44.307441 53.278408 44.307453 53.352245 44.308362 C 53.596671 44.311372 53.841573 44.324396 54.08605 44.347636 C 54.955298 44.430264 55.82083 44.64316 56.654366 44.988423 C 59.977965 46.365104 62.153462 49.608712 62.167202 53.203934 A 0.992185 0.992185 0 0 1 62.167719 53.237007 L 62.167719 53.237524 L 62.167719 53.23804 L 62.167719 53.487121 L 63.119081 52.535242 A 0.992185 0.992185 0 0 1 64.523645 52.535242 A 0.992185 0.992185 0 0 1 64.523645 53.939289 L 61.901069 56.561348 A 0.992185 0.992185 0 0 1 61.877298 56.585636 L 61.876781 56.586153 A 0.992185 0.992185 0 0 1 61.673693 56.742216 A 0.99228422 0.99228422 0 0 1 61.671109 56.743766 A 0.992185 0.992185 0 0 1 61.561555 56.798026 A 0.99228422 0.99228422 0 0 1 61.548119 56.804227 A 0.992185 0.992185 0 0 1 61.443216 56.839367 A 0.99228422 0.99228422 0 0 1 61.424096 56.844535 A 0.992185 0.992185 0 0 1 61.310924 56.867273 A 0.99228422 0.99228422 0 0 1 61.296455 56.868823 A 0.992185 0.992185 0 0 1 61.194653 56.875541 A 0.99228422 0.99228422 0 0 1 61.121789 56.873474 A 0.992185 0.992185 0 0 1 61.067012 56.869856 A 0.99228422 0.99228422 0 0 1 61.013269 56.862105 A 0.992185 0.992185 0 0 1 60.951257 56.849703 A 0.99228422 0.99228422 0 0 1 60.896997 56.83575 A 0.992185 0.992185 0 0 1 60.857206 56.822831 A 0.99228422 0.99228422 0 0 1 60.735766 56.772188 A 0.992185 0.992185 0 0 1 60.699593 56.754618 A 0.99228422 0.99228422 0 0 1 60.645333 56.721545 A 0.992185 0.992185 0 0 1 60.603992 56.694157 A 0.99228422 0.99228422 0 0 1 60.553866 56.65695 A 0.992185 0.992185 0 0 1 60.520276 56.627494 A 0.99228422 0.99228422 0 0 1 60.472734 56.586153 L 57.827936 53.939289 A 0.992185 0.992185 0 0 1 57.827936 52.535242 A 0.992185 0.992185 0 0 1 59.230433 52.535242 L 60.183346 53.488154 L 60.183346 53.23804 L 60.183346 53.237524 C 60.183138 50.425776 58.492469 47.896373 55.894723 46.820351 C 53.296818 45.744264 50.314551 46.337849 48.3262 48.3262 A 0.992185 0.992185 0 0 1 46.923703 48.3262 A 0.992185 0.992185 0 0 1 46.923703 46.923703 C 48.60396 45.243449 50.844571 44.336921 53.13107 44.308362 z M 45.298481 49.599506 A 0.99228422 0.99228422 0 0 1 45.300032 49.599506 A 0.99228422 0.99228422 0 0 0 45.300548 49.599506 A 0.992185 0.992185 0 0 1 45.425605 49.607775 A 0.99228422 0.99228422 0 0 1 45.429223 49.607775 A 0.992185 0.992185 0 0 1 45.679336 49.674954 A 0.99228422 0.99228422 0 0 0 45.679853 49.674954 A 0.992185 0.992185 0 0 1 46.001797 49.890444 A 0.992185 0.992185 0 0 0 46.002314 49.890444 L 46.025051 49.913699 A 0.992185 0.992185 0 0 1 46.026085 49.914732 L 48.648661 52.535242 A 0.992185 0.992185 0 0 1 48.648661 53.939289 A 0.992185 0.992185 0 0 1 47.244097 53.939289 L 46.292735 52.987927 L 46.292735 53.23804 C 46.292735 56.049997 47.982417 58.578091 50.580324 59.65418 C 53.178233 60.730269 56.159978 60.136683 58.14833 58.14833 A 0.992185 0.992185 0 0 1 59.552894 58.14833 A 0.992185 0.992185 0 0 1 59.552894 59.552894 C 57.639009 61.46678 54.996225 62.374776 52.388481 62.126895 C 51.519233 62.044268 50.653702 61.833437 49.820165 61.488174 C 46.486016 60.107126 44.308362 56.846898 44.308362 53.23804 L 44.308362 52.98741 L 43.355449 53.939289 A 0.992185 0.992185 0 0 1 41.952952 53.939289 A 0.992185 0.992185 0 0 1 41.952952 52.535242 L 44.59775 49.890444 A 0.99228422 0.99228422 0 0 1 44.638057 49.855305 A 0.992185 0.992185 0 0 1 44.679398 49.818614 A 0.99228422 0.99228422 0 0 1 44.726941 49.783991 A 0.992185 0.992185 0 0 1 44.776033 49.751435 A 0.99228422 0.99228422 0 0 1 44.819958 49.724563 A 0.992185 0.992185 0 0 1 44.889204 49.68994 A 0.99228422 0.99228422 0 0 1 44.947599 49.665652 A 0.992185 0.992185 0 0 1 45.027697 49.63878 A 0.99228422 0.99228422 0 0 1 45.068005 49.628445 A 0.992185 0.992185 0 0 1 45.143969 49.612942 A 0.99228422 0.99228422 0 0 1 45.185827 49.606741 A 0.992185 0.992185 0 0 1 45.298481 49.599506 z " />
+  </g>
+</svg>
