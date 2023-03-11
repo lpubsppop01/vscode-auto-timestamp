@@ -22,7 +22,10 @@ If this extension does not work, please check the followings:
 - This extension does not work if your VS Code Auto Save setting is `afterDelay`.
 
 ## Download
-- [vscode-auto-timestamp-0.0.5.vsix - GitHub Releases](https://github.com/lpubsppop01/vscode-auto-timestamp/releases/download/0.0.5/vscode-auto-timestamp-0.0.5.vsix)
+[vscode-auto-timestamp-0.0.5.vsix - GitHub Releases](https://github.com/lpubsppop01/vscode-auto-timestamp/releases/download/0.0.5/vscode-auto-timestamp-0.0.5.vsix)
+
+Depending on the situation, this extension seems not to be found in the VS Marketplace search.
+In that case, please install from the above.
 
 ## Author
 [lpubsppop01](https://github.com/lpubsppop01)
