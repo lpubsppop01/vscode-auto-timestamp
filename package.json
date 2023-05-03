@@ -33,36 +33,43 @@
                     "lpubsppop01.autoTimeStamp.filenamePattern": {
                         "description": "%filenamePattern.description%",
                         "type": "string",
+                        "scope": "language-overridable",
                         "default": "^(?!.*[/\\\\]\\.vscode[/\\\\]settings.json$)"
                     },
                     "lpubsppop01.autoTimeStamp.lineLimit": {
                         "description": "%lineLimit.description%",
                         "type": "integer",
+                        "scope": "language-overridable",
                         "default": 5
                     },
                     "lpubsppop01.autoTimeStamp.birthTimeStart": {
                         "description": "%birthTimeStart.description%",
                         "type": "string",
+                        "scope": "language-overridable",
                         "default": "[cC]reated *: "
                     },
                     "lpubsppop01.autoTimeStamp.birthTimeEnd": {
                         "description": "%birthTimeEnd.description%",
                         "type": "string",
+                        "scope": "language-overridable",
                         "default": "$"
                     },
                     "lpubsppop01.autoTimeStamp.modifiedTimeStart": {
                         "description": "%modifiedTimeStart.description%",
                         "type": "string",
+                        "scope": "language-overridable",
                         "default": "[lL]ast[ -][mM]odified *: "
                     },
                     "lpubsppop01.autoTimeStamp.modifiedTimeEnd": {
                         "description": "%modifiedTimeEnd.description%",
                         "type": "string",
+                        "scope": "language-overridable",
                         "default": "$"
                     },
                     "lpubsppop01.autoTimeStamp.momentFormat": {
                         "description": "%momentFormat.description%",
                         "type": "string",
+                        "scope": "language-overridable",
                         "default": "YYYY/MM/DD HH:mm:ss"
                     }
                 }

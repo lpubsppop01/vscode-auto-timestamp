@@ -5,12 +5,7 @@ import * as fs from 'fs';
 import * as moment from 'moment';
 
 export function activate(context: vscode.ExtensionContext) {
-    const config = new ExtensionConfiguration();
-    context.subscriptions.push(vscode.workspace.onDidChangeConfiguration(e => {
-        config.onDidChangeConfiguration();
-    }));
-
-    const core = new ExtensionCore(config);
+    const core = new ExtensionCore();
     context.subscriptions.push(vscode.workspace.onWillSaveTextDocument(e => {
         core.onWillSaveTextDocument(e);
     }));
@@ -21,32 +16,27 @@ export function deactivate() {
 
 class ExtensionCore {
 
-    private m_config: ExtensionConfiguration;
-
-    public constructor(config: ExtensionConfiguration) {
-        this.m_config = config;
-    }
-
     public onWillSaveTextDocument(e: vscode.TextDocumentWillSaveEvent) {
-        if (!e.document.fileName.match(this.m_config.fileNamePattern)) return;
+        const config = new ExtensionConfiguration(e.document);
+        if (!e.document.fileName.match(config.fileNamePattern)) return;
         if (e.reason == vscode.TextDocumentSaveReason.AfterDelay) return;
         var edits: vscode.TextEdit[] = [];
-        const lineIndices = this.getIndexRangeUntil(this.m_config.lineLimit, e.document.lineCount);
+        const lineIndices = this.getIndexRangeUntil(config.lineLimit, e.document.lineCount);
         for (const iLine of lineIndices) {
             const line = e.document.lineAt(iLine);
 
             const birthTimeRange = this.getTextRangeBetween(line,
-                 this.m_config.birthTimeStart, this.m_config.birthTimeEnd);
+                 config.birthTimeStart, config.birthTimeEnd);
             if (birthTimeRange != null && birthTimeRange.isEmpty) {
                 const stats = fs.statSync(e.document.fileName);
-                const timeStr = moment(stats.birthtime).format(this.m_config.momentFormat);
+                const timeStr = moment(stats.birthtime).format(config.momentFormat);
                 edits.push(vscode.TextEdit.replace(birthTimeRange, timeStr));
             }
 
             const modifiedTimeRange = this.getTextRangeBetween(line,
-                 this.m_config.modifiedTimeStart, this.m_config.modifiedTimeEnd);
+                 config.modifiedTimeStart, config.modifiedTimeEnd);
             if (modifiedTimeRange != null) {
-                const timeStr = moment().format(this.m_config.momentFormat);
+                const timeStr = moment().format(config.momentFormat);
                 edits.push(vscode.TextEdit.replace(modifiedTimeRange, timeStr));
             }
         }
@@ -89,17 +79,8 @@ class ExtensionConfiguration {
 
     private m_config: vscode.WorkspaceConfiguration;
 
-    public constructor() {
-        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimeStamp");
-    }
-
-    public onDidChangeConfiguration() {
-        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimeStamp");
-        this.m_fileNamePattern = null;
-        this.m_birthTimeStart = null;
-        this.m_birthTimeEnd = null;
-        this.m_modifiedTimeStart = null;
-        this.m_modifiedTimeEnd = null;
+    public constructor(document: vscode.TextDocument) {
+        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimeStamp", document);
     }
 
     private getValue<T>(propertyName: string, defaultValue: T): T {
