@@ -2,7 +2,7 @@
 
 import * as vscode from 'vscode';
 import * as fs from 'fs';
-import * as moment from 'moment';
+import { DateTime } from 'luxon';
 
 export function activate(context: vscode.ExtensionContext) {
     const core = new ExtensionCore();
@@ -29,14 +29,14 @@ class ExtensionCore {
                  config.birthTimeStart, config.birthTimeEnd);
             if (birthTimeRange != null && birthTimeRange.isEmpty) {
                 const stats = fs.statSync(e.document.fileName);
-                const timeStr = moment(stats.birthtime).format(config.momentFormat);
+                const timeStr = DateTime.fromJSDate(stats.birthtime).setZone(config.luxonTimezone).toFormat(config.luxonFormat);
                 edits.push(vscode.TextEdit.replace(birthTimeRange, timeStr));
             }
 
             const modifiedTimeRange = this.getTextRangeBetween(line,
                  config.modifiedTimeStart, config.modifiedTimeEnd);
             if (modifiedTimeRange != null) {
-                const timeStr = moment().format(config.momentFormat);
+                const timeStr = DateTime.now().setZone(config.luxonTimezone).toFormat(config.luxonFormat);
                 edits.push(vscode.TextEdit.replace(modifiedTimeRange, timeStr));
             }
         }
@@ -133,8 +133,12 @@ class ExtensionConfiguration {
         return this.m_modifiedTimeEnd;
     }
 
-    public get momentFormat(): string {
-        return this.getValue<string>("momentFormat", "YYYY/MM/DD HH:mm:ss");
+    public get luxonFormat(): string {
+        return this.getValue<string>("luxonFormat", "yyyy/LL/dd HH:mm:ss");
+    }
+
+    public get luxonTimezone(): string {
+        return this.getValue<string>("luxonTimezone", "system");
     }
 
 }

@@ -93,6 +93,6 @@
         "typescript": "^5.0.4"
     },
     "dependencies": {
-        "moment": "^2.29.4"
+        "luxon": "^3.3.0"
     }
 }
