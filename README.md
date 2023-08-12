@@ -21,6 +21,14 @@ If this extension does not work, please check the followings:
   - The default value changed in version 0.0.5. If you have been using 0.0.4 or earlier and have changed this setting, please check it.
 - This extension does not work if your VS Code Auto Save setting is `afterDelay`.
 
+You can change the time stamp format and timezone with the following settings:
+- The time stamp format can be changed with `luxonFormat`.
+  - See: [Formatting (Luxon)](https://moment.github.io/luxon/#/formatting?id=table-of-tokens)
+  - Migrated from Moment to Luxon in version 0.0.8. `momentFormat` can also be used, but `luxonFormat` is recommended for newly setup environments and projects.
+- The timezone can be set with `luxonTimezone`.
+  - See: [Time zones and offsets (Luxon)](https://moment.github.io/luxon/#/zones?id=specifying-a-zone)
+  - The default value is `system` which means the system's local timezone.
+
 If you try to handle many situations with only setting values, the patterns may become complicated.
 VS Code's standard features allow you to change the settings per project and per language.
 Please use them together.

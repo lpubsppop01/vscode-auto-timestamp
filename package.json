@@ -77,6 +77,12 @@
                         "type": "string",
                         "scope": "language-overridable",
                         "default": "system"
+                    },
+                    "lpubsppop01.autoTimeStamp.momentFormat": {
+                        "description": "%momentFormat.description%",
+                        "type": "string",
+                        "scope": "language-overridable",
+                        "default": "YYYY/MM/DD HH:mm:ss"
                     }
                 }
             }
@@ -99,6 +105,7 @@
         "typescript": "^5.0.4"
     },
     "dependencies": {
-        "luxon": "^3.3.0"
+        "luxon": "^3.3.0",
+        "moment": "^2.29.4"
     }
 }

@@ -5,5 +5,7 @@
     "birthTimeEnd.description": "この正規表現にマッチする箇所から前を作成日時フィールドと見なします。",
     "modifiedTimeStart.description": "この正規表現にマッチする箇所から後を更新日時フィールドと見なします。",
     "modifiedTimeEnd.description": "この正規表現にマッチする箇所から前を更新日時フィールドと見なします。",
-    "momentFormat.description": "作成および更新日時に用いる Moment.js フォーマット文字列です。"
+    "luxonFormat.description": "作成および更新日時に用いる Luxon フォーマット文字列です。参照ください: https://moment.github.io/luxon/#/formatting?id=table-of-tokens",
+    "luxonTimezone.description": "作成および更新日時に用いる Luxon タイムゾーン文字列です。参照ください: https://moment.github.io/luxon/#/zones?id=specifying-a-zone",
+    "momentFormat.description": "作成および更新日時に用いる Moment フォーマット文字列です。Luxon の設定がある場合こちらは使用されません。"
 }

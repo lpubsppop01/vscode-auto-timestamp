@@ -2,6 +2,7 @@
 
 import * as vscode from 'vscode';
 import * as fs from 'fs';
+import * as moment from 'moment';
 import { DateTime } from 'luxon';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -29,14 +30,14 @@ class ExtensionCore {
                  config.birthTimeStart, config.birthTimeEnd);
             if (birthTimeRange != null && birthTimeRange.isEmpty) {
                 const stats = fs.statSync(e.document.fileName);
-                const timeStr = DateTime.fromJSDate(stats.birthtime).setZone(config.luxonTimezone).toFormat(config.luxonFormat);
+                const timeStr = this.formatTime(config, stats.birthtime)
                 edits.push(vscode.TextEdit.replace(birthTimeRange, timeStr));
             }
 
             const modifiedTimeRange = this.getTextRangeBetween(line,
                  config.modifiedTimeStart, config.modifiedTimeEnd);
             if (modifiedTimeRange != null) {
-                const timeStr = DateTime.now().setZone(config.luxonTimezone).toFormat(config.luxonFormat);
+                const timeStr = this.formatTime(config);
                 edits.push(vscode.TextEdit.replace(modifiedTimeRange, timeStr));
             }
         }
@@ -73,6 +74,20 @@ class ExtensionCore {
         return new vscode.Range(startPos, endPos);
     }
 
+    private formatTime(config: ExtensionConfiguration, birthtime?: Date): string {
+        if (birthtime) {
+            if (config.hasMomentFormat && !config.hasLuxonFormatOrTimezone) {
+                return moment(birthtime).format(config.momentFormat);
+            } 
+            return DateTime.fromJSDate(birthtime).setZone(config.luxonTimezone).toFormat(config.luxonFormat);
+        } else {
+            if (config.hasMomentFormat && !config.hasLuxonFormatOrTimezone) {
+                return moment().format(config.momentFormat);
+            }
+            return DateTime.now().setZone(config.luxonTimezone).toFormat(config.luxonFormat);
+        }
+    }
+
 }
 
 class ExtensionConfiguration {
@@ -87,6 +102,18 @@ class ExtensionConfiguration {
         if (this.m_config == null) return defaultValue;
         const value = this.m_config.get<T>(propertyName);
         return value != null ? value : defaultValue;
+    }
+
+    private hasNonDefaultValue(propertyName: string): boolean {
+        if (this.m_config == null) return false;
+        const inspected = this.m_config.inspect(propertyName);
+        for (const [key] of Object.entries(inspected)) {
+            if (["defaultValue", "key"].includes(key)) continue;
+            if (inspected[key]) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private m_fileNamePattern: RegExp;
@@ -139,6 +166,18 @@ class ExtensionConfiguration {
 
     public get luxonTimezone(): string {
         return this.getValue<string>("luxonTimezone", "system");
+    }
+
+    public get hasLuxonFormatOrTimezone(): boolean {
+        return this.hasNonDefaultValue('luxonFormat') || this.hasNonDefaultValue('luxonTimezone');
+    }
+
+    public get momentFormat(): string {
+        return this.getValue<string>("momentFormat", "YYYY/MM/DD HH:mm:ss");
+    }
+
+    public get hasMomentFormat(): boolean {
+        return this.hasNonDefaultValue('momentFormat');
     }
 
 }

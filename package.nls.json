@@ -6,5 +6,6 @@
     "modifiedTimeStart.description": "Configure regular expression that following of matched part will be treated as modified time field.",
     "modifiedTimeEnd.description": "Configure regular expression that preceding of matched part will be treated as modified time field.",
     "luxonFormat.description": "Luxon format string for birth time and modified time. See: https://moment.github.io/luxon/#/formatting?id=table-of-tokens",
-    "luxonTimezone.description": "Luxon timezone string for birth time and modified time. See: https://moment.github.io/luxon/#/zones?id=specifying-a-zone"
+    "luxonTimezone.description": "Luxon timezone string for birth time and modified time. See: https://moment.github.io/luxon/#/zones?id=specifying-a-zone",
+    "momentFormat.description": "Moment format string for birth time and modified time. This is not used if Luxon settings are set."
 }
