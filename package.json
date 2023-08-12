@@ -66,11 +66,17 @@
                         "scope": "language-overridable",
                         "default": "$"
                     },
-                    "lpubsppop01.autoTimeStamp.momentFormat": {
-                        "description": "%momentFormat.description%",
+                    "lpubsppop01.autoTimeStamp.luxonFormat": {
+                        "description": "%luxonFormat.description%",
                         "type": "string",
                         "scope": "language-overridable",
-                        "default": "YYYY/MM/DD HH:mm:ss"
+                        "default": "yyyy/LL/dd HH:mm:ss"
+                    },
+                    "lpubsppop01.autoTimeStamp.luxonTimezone": {
+                        "description": "%luxonTimezone.description%",
+                        "type": "string",
+                        "scope": "language-overridable",
+                        "default": "system"
                     }
                 }
             }
@@ -93,6 +99,6 @@
         "typescript": "^5.0.4"
     },
     "dependencies": {
-        "moment": "^2.29.4"
+        "luxon": "^3.3.0"
     }
 }
